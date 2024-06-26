@@ -30,7 +30,7 @@ public class RandomPasswordGeneratorTest {
         Assertions.assertEquals(countOfLower(password),numberOfLowerCaseLetters);
         Assertions.assertEquals(countOfUpper(password),numberOfUpperCaseLetters);
         Assertions.assertEquals(countOfNumber(password), numberOfNumeric);
-        Assertions.assertEquals(length-countOfLower(password)-countOfUpper(password)-countOfNumber(password),numberOfSpecialChars);
+        Assertions.assertEquals(countOfSpecial(password),numberOfSpecialChars);
 
     }
 
@@ -72,6 +72,6 @@ public class RandomPasswordGeneratorTest {
     private int countOfSpecial(String password){
         return (int) password.chars().filter( c -> !Character.isLetterOrDigit(c)).count();
     }
-    
+
 }
 
