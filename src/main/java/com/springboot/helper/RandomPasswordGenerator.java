@@ -7,6 +7,7 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
+//PW
 public class RandomPasswordGenerator {
     public static String generate(int numberOfUpperCaseLetters,
                                   int numberOfLowerCaseLetters,

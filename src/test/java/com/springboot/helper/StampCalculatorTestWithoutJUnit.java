@@ -5,6 +5,8 @@ import com.springboot.order.entity.OrderCoffee;
 
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class StampCalculatorTestWithoutJUnit {
     public static void main(String[] args) {
         calculateStampCountTest();
@@ -24,6 +26,7 @@ public class StampCalculatorTestWithoutJUnit {
 
         // then
         System.out.println(expected == actual);
+
     }
 
     private static void calculateEarnedStampCountTest() {
@@ -45,5 +48,6 @@ public class StampCalculatorTestWithoutJUnit {
 
         // then
         System.out.println(expected == actual);
+
     }
 }
