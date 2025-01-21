@@ -23,13 +23,13 @@ public class RandomPasswordGenerator {
                 .collect(StringBuilder::new, StringBuilder::append, StringBuilder::append)
                 .toString();
     }
-
+// 뽑아진 단어들을 랜덤으로 섞는다.
     private static List<Character> shuffleLetters(String combinedLetters) {
         List<Character> shuffledLetters = combinedLetters.chars().mapToObj(c -> (char) c).collect(toList());
         Collections.shuffle(shuffledLetters);
         return shuffledLetters;
     }
-
+// 문자열을 하나의 문자열로 합치자.
     private static String combineLetters(String upperCaseLetters, String lowerCaseLetters, String numbers, String specialChars) {
         return upperCaseLetters.concat(lowerCaseLetters).concat(numbers).concat(specialChars);
     }
